@@ -1031,7 +1031,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.394, y: 1.117}
+  m_AnchoredPosition: {x: -5.5, y: 1.117}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &388888954
@@ -2244,6 +2244,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7701389924319025266, guid: 6ab1deeaf638a8943b1b84b0eca7077b, type: 3}
+      propertyPath: m_InteractionLayerMask.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7701389925286416458, guid: 6ab1deeaf638a8943b1b84b0eca7077b, type: 3}
       propertyPath: m_Colors.m_NormalColor.g
       value: 0.9843137
@@ -2308,7 +2312,8 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.z
       value: 4.0109997
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7701389924813546010, guid: 6ab1deeaf638a8943b1b84b0eca7077b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6ab1deeaf638a8943b1b84b0eca7077b, type: 3}
 --- !u!1 &989805076
 GameObject:
@@ -2490,6 +2495,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 758007213}
+    - target: {fileID: 7274379510505241177, guid: 3100a4534de7cf244bdae4fb871fcfee, type: 3}
+      propertyPath: m_InteractionLayerMask.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7274379510825049824, guid: 3100a4534de7cf244bdae4fb871fcfee, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -2586,7 +2595,8 @@ PrefabInstance:
       propertyPath: m_Colors.m_HighlightedColor.r
       value: 0.7294118
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7274379511836505786, guid: 3100a4534de7cf244bdae4fb871fcfee, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3100a4534de7cf244bdae4fb871fcfee, type: 3}
 --- !u!1 &1292481359
 GameObject:
@@ -2840,6 +2850,10 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 485196195}
+    - target: {fileID: 404482000604325896, guid: 9cde3252265ef034a9e123e5da6772c7, type: 3}
+      propertyPath: m_InteractionLayerMask.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 404482000639453076, guid: 9cde3252265ef034a9e123e5da6772c7, type: 3}
       propertyPath: m_Colors.m_PressedColor.b
       value: 1
@@ -2923,6 +2937,18 @@ PrefabInstance:
     - target: {fileID: 404482000864965133, guid: 9cde3252265ef034a9e123e5da6772c7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 404482001115738160, guid: 9cde3252265ef034a9e123e5da6772c7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 404482001115738160, guid: 9cde3252265ef034a9e123e5da6772c7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 404482001115738160, guid: 9cde3252265ef034a9e123e5da6772c7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.7
       objectReference: {fileID: 0}
     - target: {fileID: 404482001115738190, guid: 9cde3252265ef034a9e123e5da6772c7, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -4166,7 +4192,12 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.25
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3411577090973689786, guid: 03d90288f6dda794c8ba311e27ff1698, type: 3}
+      propertyPath: m_InteractionLayerMask.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3411577089883644343, guid: 03d90288f6dda794c8ba311e27ff1698, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 03d90288f6dda794c8ba311e27ff1698, type: 3}
 --- !u!4 &1880809522 stripped
 Transform:
@@ -4210,7 +4241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56f7a77daaa031c408855b73701842e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MoveScheme: 1
+  m_MoveScheme: 0
   m_TurnStyle: 0
   m_MoveForwardSource: 0
   m_ActionAssets:
@@ -4553,7 +4584,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.394, y: 1.117}
+  m_AnchoredPosition: {x: -5.5, y: 1.117}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &2019170292
@@ -4774,6 +4805,10 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.z
       value: 4.021
       objectReference: {fileID: 0}
+    - target: {fileID: 5192315935118850504, guid: 2d18ce476c3feec44b279f42817b3887, type: 3}
+      propertyPath: m_InteractionLayerMask.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 5192315935516628657, guid: 2d18ce476c3feec44b279f42817b3887, type: 3}
       propertyPath: m_Colors.m_PressedColor.b
       value: 1
@@ -4822,5 +4857,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 758007213}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5192315935345852848, guid: 2d18ce476c3feec44b279f42817b3887, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2d18ce476c3feec44b279f42817b3887, type: 3}
