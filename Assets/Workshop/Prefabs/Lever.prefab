@@ -16,8 +16,8 @@ GameObject:
   - component: {fileID: 7274379510138082142}
   - component: {fileID: 7274379510138082129}
   - component: {fileID: 7274379510138082139}
-  m_Layer: 0
-  m_Name: levier
+  m_Layer: 6
+  m_Name: Lever
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7274379510138082131}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.71, z: 0}
+  m_LocalPosition: {x: 0, y: 1.2110001, z: -0.7}
   m_LocalScale: {x: 0.03, y: 0.20000002, z: 0.03}
   m_Children:
   - {fileID: 7274379511797996348}
@@ -129,7 +129,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: -1, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 4.108, y: 1.01, z: -5}
+  m_ConnectedAnchor: {x: -4.135, y: 1.011, z: -4.614}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -171,6 +171,9 @@ MonoBehaviour:
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 2147484095
+  m_InteractionLayers:
+    m_Bits: 1
+  m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
     m_PersistentCalls:
@@ -182,6 +185,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
     m_PersistentCalls:
       m_Calls: []
   m_SelectEntered:
@@ -493,7 +502,7 @@ GameObject:
   - component: {fileID: 7274379510461120736}
   - component: {fileID: 7274379510461120739}
   m_Layer: 0
-  m_Name: table
+  m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -507,7 +516,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7274379510461120741}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.079}
+  m_LocalPosition: {x: 0, y: 0.501, z: -0.621}
   m_LocalScale: {x: 0.3, y: 1, z: 0.3}
   m_Children:
   - {fileID: 7274379510187633801}
@@ -592,7 +601,7 @@ GameObject:
   - component: {fileID: 7274379510477200942}
   - component: {fileID: 7274379510477200929}
   m_Layer: 5
-  m_Name: atelierMenu3
+  m_Name: Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -606,17 +615,18 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7274379510477200930}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -0.50000095}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 0.0005, y: 0.0005, z: 0.0015000001}
   m_Children:
-  - {fileID: 7274379511520380861}
   - {fileID: 7274379510606508716}
+  - {fileID: 7274379511511712115}
+  - {fileID: 7274379511860075930}
   m_Father: {fileID: 7274379510825049824}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0.75}
+  m_AnchoredPosition: {x: 0, y: 1.5}
   m_SizeDelta: {x: 2559.9998, y: 1358}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!223 &7274379510477200940
@@ -713,7 +723,7 @@ GameObject:
   - component: {fileID: 7274379510484736974}
   - component: {fileID: 7274379510484736961}
   m_Layer: 0
-  m_Name: Cylinder (1)
+  m_Name: button_push
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -924,6 +934,9 @@ MonoBehaviour:
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 64
+  m_InteractionLayers:
+    m_Bits: 1
+  m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
     m_PersistentCalls:
@@ -959,6 +972,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
     m_PersistentCalls:
       m_Calls: []
   m_SelectEntered:
@@ -1003,6 +1022,9 @@ MonoBehaviour:
   m_TeleportationProvider: {fileID: 0}
   m_MatchOrientation: 2
   m_TeleportTrigger: 0
+  m_Teleporting:
+    m_PersistentCalls:
+      m_Calls: []
   m_TeleportAnchorTransform: {fileID: 7274379510284969285}
 --- !u!1 &7274379510578930244
 GameObject:
@@ -1048,7 +1070,7 @@ GameObject:
   - component: {fileID: 7274379510606508714}
   - component: {fileID: 7274379510606508717}
   m_Layer: 5
-  m_Name: fond
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1064,15 +1086,14 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 10}
-  m_Children:
-  - {fileID: 7274379510707393461}
+  m_Children: []
   m_Father: {fileID: 7274379510477200931}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 1279.9999, y: -100}
-  m_SizeDelta: {x: 256, y: 115.8}
+  m_SizeDelta: {x: 500, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7274379510606508714
 CanvasRenderer:
@@ -1112,43 +1133,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &7274379510707393460
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7274379510707393461}
-  m_Layer: 5
-  m_Name: attelier
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &7274379510707393461
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7274379510707393460}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 7274379511511712115}
-  - {fileID: 7274379511860075930}
-  m_Father: {fileID: 7274379510606508716}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7274379510825049827
 GameObject:
   m_ObjectHideFlags: 0
@@ -1159,7 +1143,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7274379510825049824}
   m_Layer: 0
-  m_Name: atelier levier
+  m_Name: Lever
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1172,7 +1156,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7274379510825049827}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.108, y: 0.5, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1196,7 +1180,7 @@ GameObject:
   - component: {fileID: 7274379510976327468}
   - component: {fileID: 7274379510976327471}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: button_base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1390,7 +1374,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 4.115, y: 1.5, z: -4.391}
+  m_ConnectedAnchor: {x: -4.1280003, y: 1.64, z: -3.9039998}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1587,8 +1571,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 7
-  m_fontSizeBase: 7
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1687,16 +1671,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7274379511511712114}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.3}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -13.0000105}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
-  m_Father: {fileID: 7274379510707393461}
-  m_RootOrder: 0
+  m_Father: {fileID: 7274379510477200931}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 9.3}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0, y: 316}
+  m_SizeDelta: {x: 450, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7274379511511712113
 CanvasRenderer:
@@ -1726,8 +1710,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Interagir avec un objet :\r\n\nAttrapez le levier, inclinez le vers la
-    droite et le voyant passera au vert. \r\n"
+  m_text: 'Interagir avec un levier
+
+
+    Attrapez le levier et inclinez le vers
+    la droite pour allumer le voyant !
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1754,8 +1743,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10
-  m_fontSizeBase: 10
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1796,74 +1785,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!1 &7274379511520380860
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7274379511520380861}
-  - component: {fileID: 7274379511520380859}
-  - component: {fileID: 7274379511520380858}
-  m_Layer: 0
-  m_Name: EventSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7274379511520380861
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7274379511520380860}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 801.6853, y: 1540.3395, z: 2709.4539}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_Children: []
-  m_Father: {fileID: 7274379510477200931}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7274379511520380859
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7274379511520380860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
---- !u!114 &7274379511520380858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7274379511520380860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab68ce6587aab0146b8dabefbd806791, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ClickSpeed: 0.3
-  m_MoveDeadzone: 0.6
-  m_RepeatDelay: 0.5
-  m_RepeatRate: 0.1
-  m_TrackedDeviceDragThresholdMultiplier: 2
-  m_MaxTrackedDeviceRaycastDistance: 1000
-  m_EnableXRInput: 1
-  m_EnableMouseInput: 1
-  m_EnableTouchInput: 1
 --- !u!1 &7274379511781131951
 GameObject:
   m_ObjectHideFlags: 0
@@ -1957,8 +1878,8 @@ GameObject:
   - component: {fileID: 7274379511797996347}
   - component: {fileID: 7274379511797996346}
   - component: {fileID: 7274379511797996349}
-  m_Layer: 0
-  m_Name: levier (1)
+  m_Layer: 6
+  m_Name: lever_handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2037,7 +1958,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5000001
+  m_Radius: 0.7
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
@@ -2053,7 +1974,7 @@ GameObject:
   - component: {fileID: 7274379511836505787}
   - component: {fileID: 7274379511836505786}
   m_Layer: 0
-  m_Name: Balise
+  m_Name: Marker
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -2067,7 +1988,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7274379511836505788}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 0.0069999695, y: -0.5, z: 0.6090002}
+  m_LocalPosition: {x: 0.0069999695, y: 0.14, z: 0.00999999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7274379511316106347}
@@ -2180,18 +2101,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7274379511860075933}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -15}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
   - {fileID: 7274379511291048426}
-  m_Father: {fileID: 7274379510707393461}
-  m_RootOrder: 1
+  m_Father: {fileID: 7274379510477200931}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -31.1}
-  m_SizeDelta: {x: 150, y: 15}
+  m_AnchoredPosition: {x: 0, y: -750}
+  m_SizeDelta: {x: 150, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7274379511860075929
 CanvasRenderer:
@@ -2252,7 +2173,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.2509804, g: 0.2509804, b: 0.2509804, a: 1}
+    m_NormalColor: {r: 0.1764706, g: 0.9843137, b: 1, a: 1}
     m_HighlightedColor: {r: 0.15686275, g: 0.15686275, b: 0.15686275, a: 1}
     m_PressedColor: {r: 0, g: 0.6792453, b: 0.012652577, a: 1}
     m_SelectedColor: {r: 0.15686275, g: 0.15686275, b: 0.15686275, a: 1}

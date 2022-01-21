@@ -79,13 +79,13 @@ public class Hand : MonoBehaviour
         // Position
         var positionWithOffset = _followTarget.TransformPoint(positionOffset);
         var distance = Vector3.Distance(positionWithOffset, transform.position);
-        _body.velocity = (positionWithOffset - transform.position).normalized * (followSpeed * distance);
+        _body.velocity = (positionWithOffset - transform.position).normalized * (followSpeed * distance) * Time.deltaTime;
 
         // Rotation
         var rotationWithOffset = _followTarget.rotation * Quaternion.Euler(rotationOffset);
         var q = rotationWithOffset * Quaternion.Inverse(_body.rotation);
         q.ToAngleAxis(out float angle, out Vector3 axis);
-        _body.angularVelocity = axis * (angle * Mathf.Deg2Rad * rotateSpeed);
+        _body.angularVelocity = axis * (angle * Mathf.Deg2Rad * rotateSpeed) * Time.deltaTime;
     }
 
     private void Grab(InputAction.CallbackContext context)
